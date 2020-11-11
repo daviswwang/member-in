@@ -1,0 +1,30 @@
+{
+  "name": "daviswwang/member-in",
+  "description": "INGYM 会员 sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "daviswwang",
+      "email": "130086230@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Daviswwang\\MemberIn\\": "./src/"
+    }
+  },
+  "require": {
+    "php": ">=7.1.3",
+    "elasticsearch/elasticsearch": "^7.3"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Daviswwang\\MemberIn\\MemberInServiceProvider"
+      ]
+    },
+    "aliases": {
+      "Weather": "Daviswwang\\MemberIn\\Facades\\MemberIn"
+    }
+  }
+}
